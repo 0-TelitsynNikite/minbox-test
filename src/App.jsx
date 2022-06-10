@@ -4,9 +4,6 @@ import Select from './components/Select/Select'
 import Form from './components/Form/Form'
 
 function App() {
-  
-
-
   return (
     <div className="main">
       <Title title={'ToDo'}/>
