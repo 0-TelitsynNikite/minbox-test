@@ -1,0 +1,11 @@
+.select {
+    width: var(--button-width);
+    height: var(--button-height);
+    border-radius: var(--border-radius);
+    margin: 0 auto;
+    background: var(--title-green);
+    border: none;
+    color: var(--button-text);
+    font-weight: 700;
+    text-transform: uppercase;
+}

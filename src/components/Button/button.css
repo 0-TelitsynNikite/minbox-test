@@ -1,0 +1,11 @@
+.button {
+    width: var(--button-width);
+    height: var(--button-height);
+    margin: 0 auto;
+    background: var(--title-blue);
+    border: none;
+    border-radius: var(--border-radius);
+    color: var(--button-text);
+    font-weight: 700;
+    text-transform: uppercase;
+}
