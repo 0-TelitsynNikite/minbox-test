@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="main">
-      <Title title={'ToDO'}/>
+      <Title title={'ToDo'}/>
       <Form/>
       <Select/>
       <ListOfPosts />
