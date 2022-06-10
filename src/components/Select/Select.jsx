@@ -7,12 +7,8 @@ import Option from '../Option/Option'
 export default function Select() {
     const dispatch = useDispatch()
 
-    const changeList = () => {
-        dispatch({ type: CHANGE_LIST })
-    }
-
     return (
-        <select className='select' onChange={() => changeList()}>
+        <select className='select' onChange={() => dispatch({ type: CHANGE_LIST })}>
             {selectOptions.map((item, i) => <Option key={i} value={item}/>)}
         </select>
     )

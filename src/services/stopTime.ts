@@ -1,5 +1,7 @@
-export const stopTime = (time, task) => {
-    if (task.completed) {
+type TFunc = (time: number, completed: boolean) => string
+
+export const stopTime: TFunc = (time, completed) => {
+    if (completed) {
         return `Задача завершена`
     } else if (time < 60) {
         return `Задача создана ${time} секунд назад`
@@ -7,5 +9,3 @@ export const stopTime = (time, task) => {
         return `Задача создана ${Math.floor(time / 60)} минут`
     }
 }
-
-console.log(stopTime(12, {completed: true}))

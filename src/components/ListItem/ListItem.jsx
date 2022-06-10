@@ -26,7 +26,7 @@ export default function ListItem({ task }) {
             <div className="wrapper">
                 <span className='task'>{task.textOfTheTask}</span>
                 <span className='timer'>
-                    {stopTime(time, task)}
+                    {stopTime(time, task.completed)}
                 </span>
             </div>
             <div className="button-wrapper">
